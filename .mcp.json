@@ -2,7 +2,7 @@
   "mcpServers": {
     "milepost": {
       "type": "http",
-      "url": "https://milepost.club/mcp"
+      "url": "https://milepost.club/mcp/claude"
     }
   }
 }

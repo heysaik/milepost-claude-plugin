@@ -3,7 +3,7 @@ name: milepost-manage-garage
 description: View the connected Milepost garage, add a vehicle, rename a vehicle, or change the primary vehicle.
 ---
 
-Read `get_garage` to resolve the exact vehicle and current revision. Ask when a vehicle is ambiguous. `add_vehicle` needs a caller-generated stable UUID, year, make, model, optional trim/nickname, and `expected_revision`. Reuse the UUID on a retry and check the garage after an uncertain response.
+Read `get_garage` to resolve the exact vehicle and current revision. Ask when a vehicle is ambiguous. `add_vehicle` needs a caller-generated stable UUID, make, model, optional year/trim/color/nickname, and `expected_revision`. Reuse the UUID on a retry and check the garage after an uncertain response.
 
 `update_vehicle` accepts a vehicle UUID, `expected_revision`, nickname and/or `make_primary=true`. Empty nickname clears it. Changing the primary vehicle affects future selections; it does not rewrite prior drives. These tools do not remove vehicles or change an existing vehicle's specifications.
 

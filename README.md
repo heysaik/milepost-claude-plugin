@@ -4,7 +4,9 @@ Connect Claude to your Milepost Roadbooks, drafts, garage, profile, and friends'
 shared drives. Review a trip's story and route, prepare a synced draft, update
 your car's nickname, or catch up on drives your friends have shared with you.
 The plugin includes four skills and connects to Milepost's 17-tool remote MCP
-server at `https://milepost.club/mcp`.
+server at `https://milepost.club/mcp/claude`. Tool results contain text and
+structured records; generated vehicle artwork appears in Milepost, never as
+image content returned to Claude.
 
 ## Install in Claude Code
 
@@ -22,8 +24,8 @@ to Claude after approval. No API key, Milepost password, or iCloud Keychain
 credential is required. An updated Milepost installation with notifications
 enabled is needed for approval.
 
-If you already connected Milepost through Claude's connector settings, use that
-connection. Both point to the same server; don't configure a second endpoint.
+The Claude plugin uses its own scoped connection. If prompted, approve it even
+if you already connected Milepost elsewhere. Existing connections remain valid.
 
 You can also clone this repository and load the plugin for one session:
 

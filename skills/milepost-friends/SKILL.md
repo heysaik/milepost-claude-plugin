@@ -7,7 +7,7 @@ Use `get_friends_feed` to paginate the latest 100 visible Roadbooks. Use `get_fr
 
 Feed and social timestamps use seconds since 2001-01-01 UTC; feed distance is meters and duration is seconds. Summarizing a feed does not mark it seen.
 
-`set_drive_reaction` accepts `heart`, `lightning`, `racecar`, `laugh`, `checkeredFlag`, or `mountain`. Changed reactions notify the owner; repeating the same reaction does not. `remove_drive_reaction` removes only the connected user's reaction without a notification.
+Read `get_drive_social` and choose a kind from its `reactionChoices` before calling `set_drive_reaction`. Each Roadbook offers heart, laugh, lightning, and three personalized emoji. Historical `racecar`, `checkeredFlag`, and `mountain` kinds remain supported for earlier reactions. Changed reactions notify the owner; repeating the same reaction does not. `remove_drive_reaction` removes only the connected user's reaction without a notification.
 
 `add_drive_comment` posts 1–1000 characters as the connected user and notifies the owner when commenting on a friend's drive. Post only comments authorized by the user's request. Reading or catching up is not permission to interact. Comments are not idempotent: after an uncertain response, inspect `get_drive_social` before retrying, and stop if you cannot determine whether the comment already exists.
 
