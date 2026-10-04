@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "milepost": {
+      "type": "http",
+      "url": "https://milepost.club/mcp"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "milepost-plugins",
+  "description": "Milepost Roadbooks, drafts, garage, profile, and friends for Claude.",
+  "owner": {
+    "name": "Kambampati Studios"
+  },
+  "plugins": [
+    {
+      "name": "milepost",
+      "source": "./"
+    }
+  ]
+}

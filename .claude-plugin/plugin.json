@@ -1,0 +1,19 @@
+{
+  "name": "milepost",
+  "version": "1.0.0",
+  "description": "Review and manage your Milepost profile, synced drives, drafts, garage, and friends' shared drives.",
+  "author": {
+    "name": "Kambampati Studios"
+  },
+  "displayName": "Milepost",
+  "homepage": "https://milepost.club",
+  "repository": "https://github.com/heysaik/milepost-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "milepost",
+    "roadbooks",
+    "drives",
+    "garage",
+    "travel"
+  ]
+}
